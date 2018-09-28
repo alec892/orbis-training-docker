@@ -55,4 +55,18 @@ Creo un contenedor y estand odentro de él, ejecuto el comando ls para ver los a
 8. ¿Cómo se comenta una linea de código en Dockerfile?
 Con #
 
+1. ¿Qué es NGINX?
+ES un servidor web de código abierto, que también se usa como proxy inverso, cache de http y balanceador de carga.
 
+2. ¿Cómo expongo puertos en docker?
+Se indica la palabra reservada PORTS y poner el array de puertos, donde se pone puerto local y puerto del contenedor
+PORTS:
+	- '8080:80'
+
+3. ¿Cómo especifico los puertos al levantar un contenedor (docker run)?
+
+docker run -p "0.0.0.0:1080:80". Despues de los dos puntos para especificar los puertos del contenedor  
+
+4. ¿Cómo hago 'forward' al levantar un contenedor (docker run)?
+docker run -p "0.0.0.0:1080:80". El primero es del host el segundo del container
+ 
