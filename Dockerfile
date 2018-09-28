@@ -1,1 +1,3 @@
-FROM node:10.10.0-slim
+FROM alec892/orbis-training-docker:0.2.0
+WORKDIR /app
+COPY ./preguntas.md ./
