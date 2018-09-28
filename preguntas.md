@@ -25,3 +25,5 @@ para ejecutar la shell del contenedor
 ¿Cuál es la diferencia entre docker ps y docker ps -a?
 docker ps lista todos los contenedores activos
 docker ps -a lista todos los contenedores
+
+docker run -it alec892/orbis-training-docker:0.4.0 bash
