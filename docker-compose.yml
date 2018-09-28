@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  nginx: 
+    image: alec892/nginx:1.0.0
+    build: .
+    container_name: 'nginx_training'
+    ports: 
+      - '1080:80'
+

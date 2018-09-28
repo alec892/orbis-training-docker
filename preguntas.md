@@ -27,3 +27,32 @@ docker ps lista todos los contenedores activos
 docker ps -a lista todos los contenedores
 
 docker run -it alec892/orbis-training-docker:0.4.0 bash
+
+1. ¿Cuál es la diferencia entre una imagen y un contenedor?
+Una imagen ocupa espacio en disco mientras que un contenedor ocupa espacio en memoria
+
+2. ¿Cómo listo las imágenes que hay en mi computadora?
+docker images
+
+3. ¿Cómo salgo de un contenedor de docker?
+exit
+
+4. ¿Se elimina el contenedor al salir de ella?
+docker run -it --rm alec892/orbis-training-docker:0.4.0 bash
+
+5. ¿Cómo elimino un contenedor?
+docker --rmi $IDimagen
+
+6. ¿Para qué es necesario el flag `-i`, `-t`, `--rm`?
+-i: Es para ponerlo en modo interactivo y recibir las respuestas a los comandos que se introducen
+-t: ES para abrir la terminal 
+
+--rm: Es para eliminar el contenedor al salir de él
+
+7. ¿Cómo verifico que el archivo creado se encuentra en la imagen?
+Creo un contenedor y estand odentro de él, ejecuto el comando ls para ver los archivos que se encuentran en la raíz del contenedor
+
+8. ¿Cómo se comenta una linea de código en Dockerfile?
+Con #
+
+
