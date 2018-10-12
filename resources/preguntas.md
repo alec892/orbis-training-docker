@@ -1,3 +1,5 @@
+PREGUNTAS
+=========
 1. ¿Qué importancia tiene los tags en un proyecto?
 son importantes para identificar las versiones de un proyecto
 2. ¿Cuál es la diferencia entre un tag normal y un tag anotado en git?
@@ -16,7 +18,7 @@ Si
 Para identificar a que repositorio de docker hub se subira
 9. ¿Que pasa si creo una imagen sin especificar una versión o tag, con qué versión se crea?
 se crea por defecto latest
-
+---
 ¿Porqué es necesario crear un contenedor con esta bandera -it ? ¿Qué pasa si no le pongo -it?
 Es necesatio para poder interactuar con la terminal del contenedor
 ¿Para qué sirve ejecutar el comando bash al eejcutar una imagen?
@@ -46,7 +48,7 @@ docker --rmi $IDimagen
 6. ¿Para qué es necesario el flag `-i`, `-t`, `--rm`?
 -i: Es para ponerlo en modo interactivo y recibir las respuestas a los comandos que se introducen
 -t: ES para abrir la terminal 
-
+---
 --rm: Es para eliminar el contenedor al salir de él
 
 7. ¿Cómo verifico que el archivo creado se encuentra en la imagen?
