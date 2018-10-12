@@ -1,10 +1,12 @@
-version: "2"
+version: "3"
 
 services:
-  nginx: 
-    image: alec892/nginx:1.0.0
+  training: 
+    image: alec892/orbis-training-docker:1.0.0
     build: .
-    container_name: 'nginx_training'
+    container_name: 'orbis-training-docker_training'
     ports: 
-      - '1080:80'
-
+      - '1042:1042'
+      - '35729:35729'
+    volumes:
+      - ./:/app
