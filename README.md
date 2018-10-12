@@ -12,3 +12,7 @@ docker run -i --rm -v=$(pwd):/app -w=/app -p 3030:3030 -p 35729:35729 alec892/or
 docker run -i --rm -v=$(pwd):/app -w=/app -p 1042:1042 -p 35729:35729 alec892/orbis-training-docker:1.0.0 npm start
 
 docker run -i --rm -v=$(pwd):/app -w=/app alec892/orbis-training-docker:1.0.0 npm run release
+
+docker run --rm -v=$(pwd):/app -w=/app --entrypoint="./resources/example.sh" -e "nombre=Leo" alec892/orbis-training-docker:1.0.0
+
+docker run --rm -w=/ --entrypoint=/bin/echo alec892/orbis-training-docker:1.0.0 Ejecutando contenedor...

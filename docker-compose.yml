@@ -1,6 +1,7 @@
 version: "3"
 
 services:
+
   training: 
     image: alec892/orbis-training-docker:1.0.0
     build: .
@@ -10,3 +11,11 @@ services:
       - '35729:35729'
     volumes:
       - ./:/app
+  
+  test: 
+    image: node:10.10.0-slim
+    container_name: 'node_test'
+    depends_on:
+      - training
+    #entrypoint: curl http://orbis-training-docker_training:1042
+    command: curl http://orbis-training-docker_training:1042
