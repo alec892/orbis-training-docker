@@ -1,3 +1,1 @@
-FROM nginx:alpine
-WORKDIR ./app
-COPY ./README.md ./
+FROM node:10.10.0-slim

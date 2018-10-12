@@ -4,3 +4,5 @@ docker tag alec892/orbis-training-docker:0.1.0 alec892/orbis-training-docker:0.2
 docker run -p 0.0.0.0:1080:80 alec892/nginx:1.0.0
 docker-compose build 
 docker-compose up -d
+
+docker run -i --rm -v=$(pwd):/app -w=/app  alec892/orbis-training-docker:1.0.0 npm install
