@@ -58,7 +58,7 @@ define git_push
 endef
 
 define clean_workspace
-	sudo rm -rf $(GIT_BRANCH_DIR)
+	@rm -rf $(GIT_BRANCH_DIR)
 endef
 
 define show_deploy_url
