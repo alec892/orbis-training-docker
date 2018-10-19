@@ -7,7 +7,7 @@ GIT_PERSONAL_TOKEN = 2d2bf9d265ecbf15cb29419d44361922d7c370d5
 GIT_BRANCH_DIR = $(PWD)/$(DEPLOY_DIR)/$(GIT_BRANCH)
 
 define mkdir_deploy_dir
-	@if [ ! -d "$(GIT_BRANCH_DIR)" ]; then sudo mkdir $(GIT_BRANCH_DIR); fi
+	@if [ ! -d "$(GIT_BRANCH_DIR)" ]; then mkdir $(GIT_BRANCH_DIR); fi
 endef
 
 define git_init
